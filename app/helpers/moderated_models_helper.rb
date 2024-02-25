@@ -1,0 +1,2 @@
+module ModeratedModelsHelper
+end

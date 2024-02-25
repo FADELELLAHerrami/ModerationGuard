@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moderable</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <% if flash[:notice] %>
+        <% if flash[:notice] == "true" %>
+          <div class="flash flash-success alert alert-dismissible fade show" role="alert">
+            <span><strong>Yay!</strong> 🎉 Votre contenu a été modéré avec succès et jugé approprié pour le partage</span>
+            <a data-bs-dismiss="alert" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+        <% end %>
+        <% if flash[:notice] == "false" %>
+          <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+            <span><strong>Oops!</strong> 😱 Le contenu que vous avez soumis a été modéré et jugé inapproprié pour être partagé publiquement..</span>
+            <a data-bs-dismiss="alert" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+        <% end %>
+    <% end %>
+  </body>
+</html>

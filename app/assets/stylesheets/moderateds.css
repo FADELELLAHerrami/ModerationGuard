@@ -1,0 +1,67 @@
+/* app/assets/stylesheets/moderateds.css */
+
+.field {
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.moderation-result {
+  margin-top: 20px;
+}
+
+.accepted {
+  color: green;
+}
+
+.rejected {
+  color: red;
+}
+
+
+
+
+/* Style du formulaire */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style des champs */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style des labels */
+.form-label {
+  font-weight: bold;
+}
+
+/* Style des inputs */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Pour inclure la bordure dans la largeur du champ */
+}
+
+/* Style du bouton */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
